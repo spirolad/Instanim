@@ -15,6 +15,10 @@ const commentSchema = new Schema({
     filename: {
         type: String,
         required: true
+    },
+    creationDate: {
+        type: Date,
+        default: Date.now
     }
 }, {timeseries: true});
 

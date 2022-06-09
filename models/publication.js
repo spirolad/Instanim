@@ -28,6 +28,10 @@ const publicationSchema = new Schema({
     likes: {
         type: Array,
         default: []
+    },
+    creationData: {
+        type: Date,
+        default: Date.now  
     }
 }, {timeseries: true});
 

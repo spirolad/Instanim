@@ -1,0 +1,37 @@
+
+<script type="text/javascript">
+
+    var navProfile = document.getElementById('dropProfileNav');
+
+    function showProfileNav(){
+        document.getElementById('dropProfileNav').classList.toggle('showNav');
+    }
+
+    window.addEventListener('click', function(event){
+        if(event.target == navProfile){
+            document.getElementById('dropProfileNav').classList.remove('showNav');
+        }
+    });
+
+</script>
+
+<div class="nav-container">
+    <div class="nav-menu">
+        <div class="nav-container-menu">
+
+            <div class="container-logo-instanim">
+                <a class="logo-instanim" href="/">Instanim</a>
+            </div>
+
+            <div class="container-search-field">
+                <input type="text" class="search-field" placeholder="Rechercher"/>
+            </div>
+
+            <div class="container-navigation">
+                <a href="/"><img class="menu-icon" src=""></a>
+                <a href="/explore"><img class="menu-icon" src=""></a>
+                <a href="/"><img class="menu-icon" src=""></a>
+            </div>
+        </div>
+    </div>
+</div>

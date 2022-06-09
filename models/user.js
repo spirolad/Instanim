@@ -34,23 +34,23 @@ const userSchema = new Schema({
     },
     publications: {
         type: Array,
-        default: ''
+        default: []
     },
     followers: { 
         type: Array,
-        default: ''
+        default: []
     },
     following: {
         type: Array,
-        default: ''
+        default: []
     },
     discutions: {
         type: Array,
-        default: ''
+        default: []
     },
     likes: {
         type: Array,
-        default: ''
+        default: []
     }
 }, {timeseries: true});
 
